@@ -88,3 +88,26 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .Plan {
+    &-body {
+      &-name {
+        font-size: 3rem;
+        line-height: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .Plan {
+    padding-bottom: 3rem;
+    width: 100%;
+    &-list-item:before {
+      left: 30% !important;
+      right: 0 !important;
+      width: auto;
+    }
+  }
+}

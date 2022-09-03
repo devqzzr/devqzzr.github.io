@@ -137,6 +137,7 @@
   &--customers &-body {
     display: flex;
     padding: 1.5rem;
+    flex-wrap: wrap;
   }
 
   &--engage {
@@ -174,6 +175,45 @@
       align-items: flex-start;
       margin: 6rem 0;
       padding: 0 1.5rem;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Section {
+    &-header {
+      font-size: 5.7vw;
+      line-height: 1.1em;
+      margin-left: calc(8.3333% + 3rem);
+    }
+
+    &-body {
+      &-list {
+        margin-left: calc(8.3333% + 3rem);
+      }
+    }
+  }
+
+  .Section--plans {
+    .Section-header {
+      font-size: 10vw;
+      line-height: 1.1em;
+      -webkit-text-stroke: 2px #5E50EA;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .Section--customers{
+    .Section-body {
+      margin: 0 calc(8.3333% + .75rem);
+      width: auto;
+    }
+    .Section-footer-figure {
+      margin: 0 auto;
+      max-width: 800px;
     }
   }
 }

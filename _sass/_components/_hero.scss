@@ -9,7 +9,6 @@
   align-items: flex-end;
   z-index: 2;
   width: 100vw;
-
   &:before {
     z-index: 2;
     content: '';
@@ -46,7 +45,7 @@
       letter-spacing: -.08em;
       padding: 1.5rem;
       filter: drop-shadow(0px 10px 40px #291D89) drop-shadow(0px 0 100px #291D89);
-      margin-left: 8.3333%
+      margin-left: 8.3333%;
     }
 
     &-body {
@@ -83,5 +82,43 @@
     animation: 3s ease 1s infinite alternate bounce;
     &-icon {
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Hero-text-heading {
+    font-size: 5.7vw;
+    line-height: 1.1em;
+  }
+  .Hero-text-body {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+  }
+  .Hero-arrow {
+    width: 4.5rem;
+    height: 4.5rem;
+    &-icon {
+      transform: scale(.5);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .Hero-text {
+    flex-wrap: wrap;
+  }
+  .Hero-text-heading {
+    width: 100%;
+    margin: 0;
+  }
+  .Hero-text-body {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Hero-text-heading {
+    font-size: 10vw;
   }
 }

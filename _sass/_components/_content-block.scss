@@ -52,3 +52,17 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .ContentBlock {
+    &-title {
+      line-height: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .ContentBlock {
+    width: calc(50% - 3rem);
+  }
+}

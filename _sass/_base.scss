@@ -30,6 +30,12 @@ body {
   font-family: $base-font-family;
 }
 
+@media (max-width: 1200px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
