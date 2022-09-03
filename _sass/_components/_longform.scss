@@ -1,6 +1,7 @@
 .Longform {
   max-width: 900px;
   margin: 12rem auto;
+  padding: 0 3rem;
   &-heading {
     font-size: 7rem;
     line-height: 90px;
@@ -31,6 +32,21 @@
       font-weight: bold;
       line-height: 1em;
       padding: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .Longform {
+    font-size: 1.5rem;
+    &-heading {
+      font-size: 3rem;
+      line-height: 1em;
+    }
+    &-section {
+      &-heading {
+        font-size: 2rem;
+      }
     }
   }
 }
