@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  width: 100vw;
 
   &-header {
     font-size: 7rem;
@@ -14,16 +15,19 @@
   }
 
   &-body {
-    width: 100%;
+    width: 100vw;
     display: flex;
     box-sizing: border-box;
     align-items: center;
+    overflow: hidden;
 
     &-figure {
       max-width: 1000px;
       display: block;
       flex-shrink: 0;
-      margin: 8rem 0 8rem 3rem;
+      margin: 4rem 0 4rem 3rem;
+      position: relative;
+      z-index: 2;
       &-image {
         display: block;
         width: 100%;

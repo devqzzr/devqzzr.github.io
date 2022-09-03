@@ -14,6 +14,9 @@
     padding: 2rem;
     letter-spacing: -.05em;
     margin-left: calc(16.6666% + 3rem);
+    background: #000;
+    position: relative;
+    z-index: 2;
   }
 
   &-author {

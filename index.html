@@ -103,7 +103,7 @@ layout: default
   </section>
 
   <section class='Section Section--quote'>
-    <blockquote class='Quote Quote--big'>
+    <blockquote class='Quote Quote--big Quote--right'>
       <span class='Quote-message'>
         Quizzes have helped us to generate some incredible returns for our clients. With one campaign in particular, <strong class='bold'>every dollar we spent, we got $19 in return.</strong>
       </span>
@@ -329,3 +329,137 @@ layout: default
     </div>
   </section>
 </div>
+
+<script>
+var slideUp = {
+    distance: '40%',
+    origin: 'top',
+    duration: 700
+};
+var slideUpArrow = {
+    distance: '100%',
+    origin: 'bottom',
+    delay: 1500
+};
+var slideRight = {
+    distance: '20%',
+    origin: 'left',
+    delay: 500
+};
+var slideLeft = {
+    distance: '30%',
+    origin: 'right',
+    delay: 800
+};
+
+ScrollReveal().reveal('.Hero-bg', {
+  duration: 1000
+});
+ScrollReveal().reveal('.Hero-text-heading', slideRight);
+ScrollReveal().reveal('.Hero-text-body', slideLeft);
+ScrollReveal().reveal('.Section-header', slideUp, {
+  viewFactor: .95,
+});
+ScrollReveal().reveal('.Hero-arrow', slideUpArrow);
+
+ScrollReveal().reveal('.Section-icon', {
+  scale: 0.85,
+  viewFactor: 0.8
+});
+
+ScrollReveal().reveal('.ContentBlock', {
+  distance: '50%',
+  origin: 'bottom',
+  scale: 0.85,
+  viewFactor: .5,
+  interval: 500
+});
+
+ScrollReveal().reveal('.Feature', {
+  distance: '50%',
+  origin: 'bottom',
+  viewFactor: .2,
+  interval: 500
+});
+
+ScrollReveal().reveal('.Feature-note', {
+  distance: '25%',
+  origin: 'left',
+  viewFactor: .4,
+  interval: 300
+});
+
+ScrollReveal().reveal('.Section-footer-figure-image', {
+  distance: '0',
+  viewFactor: .9,
+  duration: 1000
+});
+
+ScrollReveal().reveal('.Section-body-figure', {
+  viewFactor: .10,
+  origin: 'right',
+  distance: '500px'
+});
+
+ScrollReveal().reveal('.Section-body-list-item', {
+  viewFactor: .25,
+  origin: 'right',
+  distance: '50%'
+});
+
+ScrollReveal().reveal('.Section-body-list-item-icon', {
+  viewFactor: .50,
+  scale: .7,
+  duration: 500
+});
+
+ScrollReveal().reveal('.Quote--right .Quote-author', {
+  viewFactor: .99,
+  distance: '50px',
+  origin: 'left',
+  duration: 700
+});
+
+ScrollReveal().reveal('.Quote--right .Quote-message', {
+  viewFactor: .25,
+  origin: 'right',
+  scale: .2,
+  distance: '50%',
+  duration: 600
+});
+
+ScrollReveal().reveal('.Quote--left .Quote-author', {
+  viewFactor: .99,
+  distance: '50px',
+  origin: 'right',
+  duration: 700
+});
+
+ScrollReveal().reveal('.Quote--left .Quote-message', {
+  viewFactor: .25,
+  origin: 'left',
+  scale: .2,
+  distance: '50%',
+  duration: 600
+});
+
+ScrollReveal().reveal('.Benefit', {
+  viewFactor: .4,
+  duration: 2500,
+  interval: 1000
+});
+
+ScrollReveal().reveal('.Plan', {
+  viewFactor: .2,
+  duration: 1200,
+  interval: 500
+});
+
+ScrollReveal().reveal('.Header', {
+  duration: 2000,
+  origin: 'top',
+  delay: 1500,
+  distance: '25%'
+});
+
+</script>
