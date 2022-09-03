@@ -49,3 +49,11 @@
     color: #5DA1E0;
   }
 }
+
+@media (max-width: 900px) {
+  .Benefit {
+    margin: 0 auto 3rem;
+    width: 100%;
+    max-width: 400px;
+  }
+}

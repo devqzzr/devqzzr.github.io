@@ -24,6 +24,7 @@
     left: 2rem;
     line-height: 2.5rem;
     display: block;
+    z-index: 2;
   }
 
   &-logo {
@@ -64,5 +65,25 @@
 @media (max-width: 1000px) {
   .ContentBlock {
     width: calc(50% - 3rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .ContentBlock {
+    width: calc(50% - 1.5rem);
+    margin: .75rem;
+    &-title {
+      top: 1rem;
+      left: 1rem;
+      right: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    &-logo {
+      left: 1rem;
+      bottom: 1rem;
+      transform: scale(50%);
+      transform-origin: bottom left;
+    }
   }
 }

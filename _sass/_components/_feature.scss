@@ -57,3 +57,11 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .Feature {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

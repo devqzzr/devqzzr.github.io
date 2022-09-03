@@ -68,12 +68,49 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .Quote {
+    display: block;
     &-message {
+      width: auto;
       font-size: 3rem;
       line-height: 1.1em;
-      margin-left: calc(8.3333% + 3rem);
+      margin: 0 6rem !important;
+    }
+    &-author {
+      font-size: 1rem;
+      line-height: 1.2em;
+      margin: 1.5rem 6rem 0;
+      text-align: right;
+      justify-content: flex-end;
+      &-avatar {
+        order: 2;
+        margin: 0 0 0 1.5rem;
+        width: 4rem;
+        margin: 0 0 0 1.5rem;
+      }
+    }
+  }
+
+  .Quote--left {
+    .Quote-author {
+      text-align: left;
+      justify-content: flex-start;
+      &-avatar {
+        order: -1;
+        margin: 0 1.5rem 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Quote {
+    display: block;
+    &-message {
+      width: auto;
+      font-size: 1.5rem;
+      line-height: 1.5em;
     }
   }
 }
