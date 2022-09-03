@@ -44,3 +44,17 @@
     padding: 1.5rem;
   }
 }
+
+@media (max-width: 1000px) {
+  .Footer {
+    display: block;
+    padding: 1rem 1.5rem;
+    &-links {
+      display: block;
+      &-item,
+      &-copy {
+        padding: 5px 1.5rem 4px;
+      }
+    }
+  }
+}

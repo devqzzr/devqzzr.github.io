@@ -49,3 +49,11 @@
     width: 50%;
   }
 }
+
+@media (max-width: 1100px) {
+  .Feature {
+    &-note {
+      font-size: 1rem;
+    }
+  }
+}
