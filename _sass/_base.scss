@@ -16,6 +16,10 @@ html {
   font-size: 12px;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 /* Sections
    ========================================================================== */
 
