@@ -3,10 +3,38 @@
 ---
 @charset "utf-8";
 
+@font-face {
+    font-family: 'SailecWeb';
+    src: url('/fonts/SailecRegular.eot'), url('fonts/SailecRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SailecWeb';
+    src: url('/fonts/SailecRegularItalic.eot'), url('fonts/SailecRegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SailecWeb';
+    src: url('/fonts/SailecBold.eot'), url('fonts/SailecBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SailecWeb';
+    src: url('/fonts/SailecBoldItalic.eot'), url('fonts/SailecBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 
 // Our variables
-$base-font-family: Sailec, Helvetica, Arial, sans-serif;
+$base-font-family: SailecWeb, Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
