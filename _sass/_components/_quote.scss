@@ -1,0 +1,59 @@
+.Quote {
+  display: flex;
+  align-items: flex-end;
+  margin: 12rem 0;
+
+  &-message {
+    font-size: 4rem;
+    line-height: 5rem;
+    width: calc(50% - 36px);
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    display: block;
+    border-radius: 1rem 1rem 0 1rem;
+    padding: 2rem;
+    letter-spacing: -.05em;
+    margin-left: calc(16.6666% + 3rem);
+  }
+
+  &-author {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -.05em;
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    &-avatar {
+      display: block;
+      border-radius: 1000px;
+      margin-left: 3rem;
+      width: 18.75%;
+      background-size: cover;
+      margin-right: 3rem;
+      &:before {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    &-info {
+      margin-top: 6px;
+      &-name {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.Quote--left {
+  .Quote-author {
+    order: -1;
+    justify-content: flex-end;
+  }
+  .Quote-message {
+    margin-left: 3rem;
+    margin-right: calc(16.6666% + 3rem);
+    border-radius: 1rem 1rem 1rem 0;
+  }
+}

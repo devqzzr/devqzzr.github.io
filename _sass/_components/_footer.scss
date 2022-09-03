@@ -1,0 +1,46 @@
+.Footer {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #fff;
+  padding: 0 1.5rem;
+  margin-top: 8rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    right: 3rem;
+    background: #fff;
+    height: 1px;
+  }
+
+  &-links {
+    display: flex;
+    &-item {
+      display: block;
+      padding: 1.5rem;
+      color: #fff;
+      &:hover {
+        opacity: .5;
+      }
+      &:active {
+        opacity: 1;
+        color: #5E50EA;
+      }
+    }
+  }
+
+  &-copy {
+    opacity: .5;
+    display: block;
+    padding: 1.5rem;
+  }
+}

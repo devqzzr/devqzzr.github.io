@@ -1,0 +1,36 @@
+.Longform {
+  max-width: 900px;
+  margin: 12rem auto;
+  &-heading {
+    font-size: 7rem;
+    line-height: 90px;
+    font-weight: bold;
+    letter-spacing: -.05em;
+    padding-bottom: 8rem;
+  }
+  &-paragraph,
+  &-features-item {
+    line-height: 2em;
+    padding-bottom: 2rem;
+  }
+  &-features-item {
+    padding-left: 3rem;
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '·';
+      color: #5E50EA;
+      font-weight: bold;
+    }
+  }
+  &-section{
+    &-heading {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1em;
+      padding: 2rem 0;
+    }
+  }
+}

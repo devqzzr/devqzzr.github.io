@@ -1,0 +1,54 @@
+.ContentBlock {
+  width: calc(25% - 3rem);
+  margin: 1.5rem;
+  color: #fff;
+  background: #222;
+  display: block;
+  border-radius: .5rem;
+  position: relative;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    width: 100%;
+    padding-bottom: 100%;
+    display: block;
+  }
+
+  &-title,
+  &-logo {
+    z-index: 3;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    left: 2rem;
+    line-height: 2.5rem;
+    display: block;
+  }
+
+  &-logo {
+    top: auto;
+    bottom: 2rem;
+    right: auto;
+    background-size: cover;
+    width: 6rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    &--swig {
+      width: 69px;
+      height: 57px;
+    }
+    &--puravida {
+      width: 159px;
+      height: 47px;
+    }
+    &--square {
+      width: 117px;
+      height: 44px;
+    }
+    &--sideshow {
+      width: 153px;
+      height: 37px;
+    }
+  }
+}

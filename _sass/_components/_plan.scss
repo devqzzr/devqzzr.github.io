@@ -1,0 +1,88 @@
+.Plan {
+  width: 33.33333%;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  &-body {
+    &-tag {
+      line-height: 1em;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: bold;
+      color: #fff;
+      padding: 3rem 0;
+    }
+    &-name {
+      font-size: 7rem;
+      line-height: 90px;
+      letter-spacing: -.07em;
+    }
+  }
+  &-button {
+    border-radius: .5rem;
+    border: 2px solid;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 1em;
+    margin: 1rem 0 3rem;
+    padding: 23px 2.5rem 21px;
+    text-transform: uppercase;
+    width: auto;
+    &:hover {
+      color: #fff;
+      background: #5E50EA;
+      border-color: #5E50EA;
+    }
+    &:active {
+      transform: scale(.95);
+    }
+  }
+  &-list {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    &-item {
+      position: relative;
+      cursor: pointer;
+      &:before{
+        opacity: 0;
+        font-size: 1rem;
+        line-height: 1.5em;
+        padding: 1rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        background: #222;
+        border-radius: .5rem;
+        content: attr(data-tooltip);
+        transition: all .2s linear;
+        transform: translateY(0);
+        width: 200px;
+        margin: 0 1rem;
+      }
+      &:hover {
+        z-index: 2;
+        &:before {
+          opacity: 1;
+          transform: translateY(10px);
+        }
+      }
+
+      &--no-tip {
+        cursor: auto;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &:last-child {
+    .Plan-list-item:before {
+      left: auto;
+      right: 100%;
+    }
+  }
+}
