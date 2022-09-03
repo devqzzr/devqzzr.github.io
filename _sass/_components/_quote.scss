@@ -50,7 +50,14 @@
   .Quote-author {
     order: -1;
     justify-content: flex-end;
+    text-align: right;
   }
+
+  .Quote-author-avatar {
+    order: 2;
+    margin-right: 0;
+  }
+  .
   .Quote-message {
     margin-left: 3rem;
     margin-right: calc(16.6666% + 3rem);
