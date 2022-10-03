@@ -34,6 +34,21 @@
       padding: 2rem 0;
     }
   }
+  &-ordered-list,
+  &-unordered-list {
+    padding-left: 4rem;
+    margin-left: 0;
+    padding-bottom: 2rem;
+    line-height: 2em;
+    li {
+      list-style-type: decimal;
+    }
+  }
+  &-unordered-list {
+    li {
+      list-style-type: disc;
+    }
+  }
 }
 
 @media (max-width: 800px) {

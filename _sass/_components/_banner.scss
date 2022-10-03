@@ -1,0 +1,26 @@
+.Banner {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  z-index: 5;
+  &-message,
+  &-action {
+    display: block;
+    margin-top: 3px;
+  }
+  &-action {
+    font-weight: bold;
+    color: #473BB2;
+    margin-left: 1rem;
+  }
+}
