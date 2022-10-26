@@ -36,7 +36,7 @@
       &-image {
         display: block;
         width: 100%;
-        border-radius: .5rem;
+        border-radius: .75rem;
         box-shadow: 0px 20px 120px #323232;
       }
     }
@@ -146,7 +146,7 @@
   }
 
   &--engage {
-    padding-top: 12rem;
+    padding-top: 6rem 0 12rem 0;
     width: 100vw;
     overflow: hidden;
   }
@@ -170,19 +170,29 @@
     }
   }
 
-  &--plans {
-    margin-top: 15rem;
+  &--match {
+    display: block;
+    border: 6px solid #fff;
+    width: auto;
+    max-width: 400px;
+    border-radius: .5rem;
+    margin: 6rem auto;
     .Section-header {
-      font-size: 12rem;
-      line-height: 12rem;
-      -webkit-text-stroke: 4px #5E50EA;
-      color: #000;
+      text-align: center;
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: #000;
+      margin: -.75rem auto 0;
+      padding: 0;
+      line-height: 1.5rem;
+      display: block;
+      width: 160px;
     }
-    .Section-body {
-      align-items: flex-start;
-      margin: 6rem 0;
-      padding: 0 1.5rem;
-      flex-wrap: wrap;
+    .Section-image {
+      display: block;
+      margin: 3rem auto;
     }
   }
 }
