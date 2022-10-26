@@ -12,6 +12,11 @@
     box-sizing: border-box;
     width: 58.333333%;
     margin-left: calc(16.6666% + 3rem);
+    margin-top: 10rem;
+
+    &-link {
+      display: block;
+    }
   }
 
   &-body {
@@ -228,7 +233,8 @@
 @media (max-width: 700px) {
   .Section{
     &-header {
-      margin: 0 3rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
       width: auto;
       font-size: 3rem;
     }

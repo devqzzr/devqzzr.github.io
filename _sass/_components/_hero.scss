@@ -39,7 +39,7 @@
     &-heading {
       box-sizing: border-box;
       font-size: 120px;
-      line-height: 110px;
+      line-height: 120px;
       font-weight: bold;
       width: 50%;
       letter-spacing: -.08em;
@@ -56,6 +56,34 @@
       line-height: 40px;
       margin-bottom: 12px;
       filter: drop-shadow(0px 5px 10px #291D89) drop-shadow(0px 0px 20px #291D89);
+
+      &-button {
+        display: block;
+        background: #fff;
+        border-radius: .5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 2rem;
+        color: #473BB2;
+        text-align: center;
+        line-height: 1em;
+        padding: 14px 1rem 12px;
+
+        &-label {
+          font-size: 1.5rem;
+          line-height: 1em;
+        }
+
+        &-sublabel {
+          color: #000;
+          display: block;
+          opacity: .5;
+          margin-top: 4px;
+        }
+      }
     }
   }
 
